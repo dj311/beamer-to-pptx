@@ -4,13 +4,13 @@ Command line tool to convert Beamer-generated PDFs to Powerpoint files, using SV
 
 Requirements:
 
-  - Poppler PDF tools, with `pdftocairo` and `pdftotext` available in your PATH.
+  - Poppler PDF tools, with `pdfinfo`, `pdftocairo` and `pdftotext` available in your PATH.
   - Node/Javascript runtime and `npm` (or similar) to install the Javscript dependencies.
   
 Setup:
 
-  1. Make sure you Poppler working.
-  2. Go into this directory and run `npm install -g .` to install `beamer-to-pptx` as a command line tool.
+  1. Make sure you have Poppler working with the aforementioned command line tools available.
+  2. Go into this directory and run `npm install -g .` to install `beamer-to-pptx` as a command line tool on your system.
   3. Run `beamer-to-pptx` in your shell to output the usage instructions:
 ```
   _                                         _                          _                   
