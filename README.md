@@ -7,11 +7,10 @@ Requirements:
   - Poppler PDF tools, with `pdfinfo`, `pdftocairo` and `pdftotext` available in your PATH.
   - Node/Javascript runtime and `npm` (or similar) to install the Javscript dependencies.
   
-Setup:
+Usage:
 
-  1. Make sure you have Poppler working with the aforementioned command line tools available.
-  2. Go into this directory and run `npm install -g .` to install `beamer-to-pptx` as a command line tool on your system.
-  3. Run `beamer-to-pptx` in your shell to output the usage instructions:
+  1. Make sure you have `npm` (with `npx`) and Poppler (with `pdfinfo`, `pdftocairo` and `pdftotext`) installed and working. 
+  2. Run `npx beamer-to-pptx` in your shell to run a temporary installation of the tool, which should output the usage instructions:
 ```
   _                                         _                          _                   
  | |__   ___  __ _ _ __ ___   ___ _ __     | |_ ___        _ __  _ __ | |___  __           
@@ -46,3 +45,5 @@ Setup:
  * If `pdftocairo -svg` is lossless for your PDF, then this tool should be as 
    well. The `pdftotext` transformation of speaker notes is likely to be lossy. 
 ```
+
+In short, make sure Poppler and npm/npx are installed then run `npx beamer-to-pptx <path-to-presentation.pdf>`. You could alternatively install the package as you would any other npm package.
